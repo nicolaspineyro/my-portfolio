@@ -4,14 +4,14 @@ import { RouteObject } from "src/constants/interfaces";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
+  const renderRoutes = RoutesArray.map((routeProps: RouteObject) => (
+    <Route {...routeProps} />
+  ));
+
   return (
-    <main className="App">
+    <main className="intro-container">
       <Header />
-      <Routes>
-        {RoutesArray.map((routeProps: RouteObject) => (
-          <Route {...routeProps} />
-        ))}
-      </Routes>
+      <Routes>{renderRoutes}</Routes>
     </main>
   );
 };

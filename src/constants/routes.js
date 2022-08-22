@@ -1,6 +1,6 @@
-import { Intro } from "../pages";
+import { Intro } from "src/pages";
 
-const Routes = [
+export const RoutesArray = [
   {
     name: "Intro",
     path: "/",

@@ -1,11 +1,19 @@
-import React from 'react';
+import { RoutesArray } from "src/constants";
+import { Header } from "src/components";
+import { RouteObject } from "src/constants/interfaces";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <main className="App">
-      Hello World!
+      <Header />
+      <Routes>
+        {RoutesArray.map((routeProps: RouteObject) => (
+          <Route {...routeProps} />
+        ))}
+      </Routes>
     </main>
   );
-}
+};
 
 export default App;

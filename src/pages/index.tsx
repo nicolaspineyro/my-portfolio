@@ -1,1 +1,3 @@
-import { default as Intro } from "./intro";
+import { default as Intro } from "src/pages/intro";
+
+export { Intro };

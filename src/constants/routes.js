@@ -1,13 +1,13 @@
-import { About, Contact, Intro } from "src/pages";
+import { About, Contact, Home } from "src/pages";
 
 export const RoutesArray = [
   {
-    name: "Intro",
+    name: "Home",
     path: "/",
-    element: <Intro />,
+    element: <Home />,
   },
   {
-    name: "About",
+    name: "About & Experience",
     path: "/about",
     element: <About />,
   },

@@ -6,4 +6,13 @@ interface RouteObject {
   element: ReactElement;
 }
 
-export type { RouteObject };
+interface ExperienceObject {
+  id: number;
+  icon: string;
+  company: string;
+  position: string;
+  stack: Array<String>;
+  date: string;
+}
+
+export type { RouteObject, ExperienceObject };

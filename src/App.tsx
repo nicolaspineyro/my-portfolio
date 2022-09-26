@@ -1,5 +1,5 @@
 import { RoutesArray } from "src/constants";
-import { Header } from "src/components";
+import { Header, Footer } from "src/components";
 import { RouteObject } from "src/constants/interfaces";
 import { Route, Routes } from "react-router-dom";
 
@@ -9,10 +9,11 @@ const App = () => {
   ));
 
   return (
-    <main className="intro-container">
+    <>
       <Header />
       <Routes>{renderRoutes}</Routes>
-    </main>
+      <Footer />
+    </>
   );
 };
 

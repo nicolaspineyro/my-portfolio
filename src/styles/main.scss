@@ -1,4 +1,10 @@
-@import "base/reset";
 @import "base/typography";
 
-@import "layout/intro";
+@import "layout/home";
+@import "layout/about";
+
+@import "components/header";
+@import "components/footer";
+@import "components/icon-carousel";
+
+@import "components/experience-card";

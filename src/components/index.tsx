@@ -1,3 +1,5 @@
-import Header from "src/components/header";
+import Header from "src/components/Header";
+import IconCarousel from "src/components/IconCarousel";
+import Footer from "src/components/Footer";
 
-export { Header };
+export { Header, IconCarousel, Footer };
